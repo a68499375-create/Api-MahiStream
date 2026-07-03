@@ -175,7 +175,7 @@ export default async function handler(req) {
   if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: { "access-control-allow-origin": "*" } });
 
   try {
-    const url = new URL(req.url);
+    const url = new URL(req.url, `https://${req.headers.get("host") || "localhost"}`);
     const path = url.pathname.replace(/^\/?(?:api\/)?/, "").replace(/\/$/, "") || "/";
     const parts = path.split("/").filter(Boolean);
     const source = parts[0];
