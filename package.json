@@ -1,0 +1,16 @@
+{
+  "name": "api-mahistream",
+  "version": "1.0.0",
+  "description": "MahiStream API — Vercel native serverless functions",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "node-html-parser": "^7.0.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
