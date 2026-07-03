@@ -9,8 +9,5 @@
   },
   "dependencies": {
     "node-html-parser": "^7.0.1"
-  },
-  "engines": {
-    "node": ">=20"
   }
 }
