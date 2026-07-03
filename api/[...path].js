@@ -171,7 +171,7 @@ async function nekoLatest(page) {
 
 // ─── Router ────────────────────────────────────────────────────────────
 
-export const config = { runtime: "nodejs22.x" };
+export const config = { runtime: "nodejs" };
 
 export default async function handler(req) {
   if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: { "access-control-allow-origin": "*" } });
